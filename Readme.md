@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Григорий Саргелю](https://up.htmlacademy.ru/htmlcss/32/user/477625).
-* Наставник: `Неизвестно`.
+* Наставник: [Artem Ryzhov](https://htmlacademy.ru/profile/id1387905).
 
 ---
 
