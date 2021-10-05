@@ -1,0 +1,19 @@
+
+
+.news {
+    background-image: url("../img/article.jpg");
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+}
+
+.feedback {
+    background-image: url("../img/feedback.jpg");
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+}
+
+.contacts {
+    background-image: url("../img/contacts.jpg");
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+}
