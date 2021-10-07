@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Магазин мороженого - GllacyShop</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="page-header">
@@ -26,18 +26,18 @@
 			</ul>
 			<ul class="site-navigation-list site-navigation-user">
 				<li class="site-navigation-item">
-					<a class="site-navigation-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+					<a class="site-navigation-link site-navigation-phone" href="tel:+78005558628">+7 800 555-86-28</a>
 				</li>
 				<li class="site-navigation-item">
-					<a class="site-navigation-link" href="#">
+					<a class="site-navigation-link site-navigation-search" href="#">
 						<span class="visually-hidden">Поиск</span>
 					</a>
 				</li>
 				<li class="site-navigation-item">
-					<a class="site-navigation-link" href="#">Вход</a>
+					<a class="site-navigation-link site-navigation-enter" href="#">Вход</a>
 				</li>
 				<li class="site-navigation-item">
-					<a class="site-navigation-link" href="#">Пусто</a>
+					<a class="site-navigation-link site-navigation-cart" href="#">Пусто</a>
 				</li>
 			</ul>
 		</nav>
@@ -112,7 +112,7 @@
 					<a href="#" class="button button-main" type="button">Хочу подарок</a>
 					<img src="img/presents/raspberries.png" width="181" height="240" alt="Малина в вафельном рожке">
 				</li>
-				<li>
+				<li class="presents-item">
 					<h3 class="presents-item-caption">Маршмеллоу даром!</h3>
 					<p class="presents-item-description">
                         При покупке 2 кг пломбира, добавим <br>
@@ -270,11 +270,11 @@
                 Укажите адрес и дату доставки, и мы свяжемся <br>
                 с вами, чтобы подтвердить заказ.
             </p>
-			<label for="feedback-form-date">Дата</label>
-			<input class="feedback-form-date" type="date" name="feedback-form-date" id="feedback-form-date" required>
-			<label for="feedback-form-phone">Телефон</label>
+			<label class="feedback-form-label" for="feedback-form-date">Дата</label>
+			<input class="feedback-form-date" type="text" name="feedback-form-date" id="feedback-form-date" placeholder="01.04.2020" pattern="[0-9]{2}.[0-9]{2}.[0-9]{4}" required>
+			<label class="feedback-form-label" for="feedback-form-phone">Телефон</label>
 			<input class="feedback-form-phone" type="tel" name="feedback-form-phone" id="feedback-form-phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 800 999-00-00" required>
-			<label for="feedback-form-address">Адрес</label>
+			<label class="feedback-form-label" for="feedback-form-address">Адрес</label>
 			<input class="feedback-form-address" type="text" name="feedback-form-address" id="feedback-form-address" placeholder="ул. Большая Конюшенная, 19/8">
 			<button class="button button-second" type="submit">Отправить</button>
 		</form>
@@ -283,16 +283,16 @@
 		<h2 class="visually-hidden">Контакты магазина GllacyShop</h2>
 		<div class="contacts-content">
 			<dl>
-				<dt>
+				<dt class="contacts-dt">
                     Адрес главного офиса <br>
                     и офлайн-магазина:
                 </dt>
-				<dd>
+				<dd class="contacts-dd">
                     наб. Реки Карповки, <br>
                     5 лит П, Санкт-Петербург
                 </dd>
-				<dt>Для заказов по телефону:</dt>
-				<dd>
+				<dt class="contacts-dt">Для заказов по телефону:</dt>
+				<dd class="contacts-dd">
 					<a href="tel:+78128121212">+7 (812) 812-12-12</a>
 					<span>(с 10 до 20 ежедневно)</span>
 				</dd>
@@ -322,7 +322,9 @@
 	</li>
 	</ul>
 	<div class="certificates">
-		<h2 class="certificates-title">Для поставщиков</h2>
+		<h2 class="certificates-title">
+            <b>Для поставщиков</b>
+        </h2>
 		<p class="certificates-text">О производстве</p>
 		<p class="certificates-text">Наши документы</p>
 		<p class="certificates-text">Экологические стандарты</p>
