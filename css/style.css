@@ -30,6 +30,8 @@ body {
     color: #2D3440;
 }
 
+/* * button */
+
 .button {
     font-size: 16px;
     font-weight: 700;
@@ -40,6 +42,7 @@ body {
 }
 
 .button-main {
+    display: inline-block;
     border: 4px solid rgba(252, 252, 252, 0.4);
     box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
@@ -47,12 +50,58 @@ body {
 }
 
 .button-second {
-    background: #ff2f64;
     border: 4px solid rgba(255, 47, 100, 0.3);
     box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
     color: #fcfcfc;
+    background-color: #ff2f64;
+
 }
+
+.button-form {
+    width: 187px;
+    height: 36px;
+    border: 2px solid #fcfcfc;
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 20px;
+    background-color: rgba(252, 252, 252, 0.3);
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: px;
+}
+
+/* * width and height for button */
+
+.button-order {
+    width: 139px;
+    height: 44px;
+    line-height: 44px;
+}
+
+.button-more {
+    width: 179px;
+    height: 44px;
+}
+
+.button-presents {
+    width: 176px;
+    height: 44px;
+    line-height: 44px;
+}
+
+.button-submit {
+    width: 152px;
+    height: 44px;
+}
+
+.button-contacts {
+    width: 250px;
+    height: 46px;
+}
+
+
+/* * header */
 
 .page-header {
     color: #2D3440;
@@ -67,9 +116,15 @@ body {
     text-decoration: none;
 }
 
+.site-navigation-current {
+    background-color: #FF4A78;
+    border-radius: 26px;
+    padding: 8px 16px 8px 16px;
+    color: #fcfcfc;
+}
+
 .site-navigation-search {
-    background: #fcfcfc;
-    opacity: 0.3;
+    background-color: rgba(252, 252, 252, 0.3);
     border-radius: 50%;
 }
 
@@ -81,9 +136,10 @@ body {
 .site-navigation-cart {
     font-size: 14px;
     font-weight: 400;
-    background: #fcfcfc;
-    opacity: 0.3;
+    background-color: rgba(252, 252, 252, 0.3);
     border-radius: 26px;
+    padding: 6px 18px 6px 18px;
+    color: #2D3440;
 }
 
 
@@ -111,8 +167,6 @@ body {
     text-align: center;
 }
 
-.presents-list {}
-
 .presents-item {
     background-color: #ff7799;
     border-radius: 16px;
@@ -127,9 +181,6 @@ body {
 .presents-item-description {
     font-weight: 400;
 }
-
-.button-main {}
-
 
 
 /* .catalog {} */
@@ -274,8 +325,6 @@ body {
     line-height: 20px;
 }
 
-.button-second {}
-
 .contacts {
     background-image: url("../img/contacts.jpg");
     /* background-size: cover; */
@@ -318,9 +367,8 @@ body {
 }
 
 
-.page-footer {}
+/* .page-footer {} */
 
-.certificates {}
 
 .certificates-title {
     font-size: 14px;
@@ -333,10 +381,6 @@ body {
     font-weight: 400;
     line-height: 20px;
 }
-
-.creator {}
-
-.logo-htmlacademy {}
 
 .creator-link {
     font-size: 14px;
@@ -353,3 +397,42 @@ body {
     border-bottom: 1px solid #2D3440;
 }
 
+
+/* * Страница Каталога */
+
+.breadcrumbs-link {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.breadcrumbs-item a {
+    border-bottom: 1px solid #2D3440;
+}
+
+.filters-form-group {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    background: rgba(252, 252, 252, 0.3);
+    border-radius: 20px;
+}
+
+.filters-sort {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.pagination-current {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #fcfcfc;
+    border-radius: 50%;
+    text-align: center;
+
+}

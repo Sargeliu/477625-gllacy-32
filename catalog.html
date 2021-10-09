@@ -10,12 +10,12 @@
 		<nav class="site-navigation">
 			<ul class="site-navigation-list">
 				<li class="site-navigation-item">
-					<a class="logo">
+					<a href="index.html" class="logo">
 						<img class="logo-img" src="img/logo.svg" width="137" height="56" alt="Логотип сайта GllacyShop">
 					</a>
 				</li>
 				<li class="site-navigation-item">
-					<a class="site-navigation-link" href="catalog.html">Каталог</a>
+					<a class="site-navigation-link site-navigation-current" href="catalog.html">Каталог</a>
 				</li>
 				<li class="site-navigation-item">
 					<a class="site-navigation-link" href="delivery-payments.html">Доставка и оплата</a>
@@ -37,7 +37,7 @@
 					<a class="site-navigation-link site-navigation-enter" href="#">Вход</a>
 				</li>
 				<li class="site-navigation-item">
-					<a class="site-navigation-link site-navigation-cart" href="#">Пусто</a>
+					<a class="site-navigation-link site-navigation-cart" href="#">2 товара</a>
 				</li>
 			</ul>
 		</nav>
@@ -54,7 +54,7 @@
 				<a class="breadcrumbs-link" href="catalog.html">Каталог</a>
 			</li>
 			<li class="breadcrumbs-item">
-				<a class="breadcrumbs-link">Сливочное</a>
+				<span class="breadcrumbs-link">Сливочное</span>
 			</li>
 		</ul>
     </header>
@@ -64,7 +64,7 @@
 
 		<fieldset class="filters-form-group">
 			<label for="sort" class="filters-form-title">Сортировка:</label>
-			<select class="filters" name="sort" id="sort">
+			<select class="filters-sort" name="sort" id="sort">
 			<option value="popular">по популярности</option>
 			</select>
 		</fieldset>
@@ -159,7 +159,7 @@
 				</li>
 			</ul>
         </fieldset>
-		<button class="button button-third">Применить</button>
+		<button class="button button-form">Применить</button>
     </form>
     </section>
     <section class="catalog-card">
@@ -384,7 +384,7 @@
 				</article>
 			</li>
 		</ul>
-		<button class="button button-main" type="button">Показать еще</button>
+		<button class="button button-more button-main" type="button">Показать еще</button>
 		<ol class="pagination">
 			<li class="pagination-item">
 				<a class="pagination-link pagination-prev pagination-disabled">
