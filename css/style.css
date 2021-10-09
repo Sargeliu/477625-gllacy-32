@@ -22,7 +22,15 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: Inter, sans-serif;
     font-size: 16px;
     line-height: 22px;
@@ -55,10 +63,9 @@ body {
     border-radius: 26px;
     color: #fcfcfc;
     background-color: #ff2f64;
-
 }
 
-.button-form {
+.button-filters {
     width: 187px;
     height: 36px;
     border: 2px solid #fcfcfc;
@@ -101,10 +108,33 @@ body {
 }
 
 
+.main-container {
+    flex-grow: 1;
+}
+
+.social-links {
+    width: 104px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 /* * header */
 
-.page-header {
+/* .page-header {} */
+
+.site-navigation {
+    display: flex;
+    width: 1170px;
     color: #2D3440;
+    margin: 0 auto;
+}
+
+.site-navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 956px;
+    list-style: none;
 }
 
 
@@ -121,6 +151,11 @@ body {
     border-radius: 26px;
     padding: 8px 16px 8px 16px;
     color: #fcfcfc;
+}
+
+.site-navigation-user {
+    max-width: 450px;
+    margin-left: auto;
 }
 
 .site-navigation-search {
@@ -142,6 +177,12 @@ body {
     color: #2D3440;
 }
 
+/* * main */
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
 
 /* .promo {} */
 
@@ -157,8 +198,26 @@ body {
     line-height: 24px;
 }
 
+.slider-controls {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 
 /* .presents {} */
+
+.presents-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.presents-item {
+    width: 570px;
+}
 
 .presents-title {
     font-size: 32px;
@@ -184,6 +243,18 @@ body {
 
 
 /* .catalog {} */
+
+.catalog-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.catalog-item {
+    width: 270px;
+}
 
 .catalog-title {
     font-size: 32px;
@@ -217,8 +288,6 @@ body {
 }
 
 
-
-
 .features {
     background-color: #efe3cb;
     background-image: url("../img/features/wafer.jpg");
@@ -245,7 +314,15 @@ body {
     color: #565C66;
 }
 
+/* index-columns */
+
+.index-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
 .news {
+    width: 570px;
     background-color: #ffffff;
     background-image: url("../img/article.jpg");
     /* background-size: cover; */
@@ -267,6 +344,7 @@ body {
 }
 
 .mailing {
+    width: 570px;
     background-color: #ffffff;
     background-image: url("../img/mailing.jpg");
     background-repeat: no-repeat;
@@ -369,6 +447,14 @@ body {
 
 /* .page-footer {} */
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.certificates {
+    width: 356px;
+}
 
 .certificates-title {
     font-size: 14px;
@@ -380,6 +466,10 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+}
+
+.creator {
+    width: 193px;
 }
 
 .creator-link {
