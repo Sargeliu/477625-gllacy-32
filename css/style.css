@@ -236,6 +236,7 @@ body {
 }
 
 .presents-item {
+    box-sizing: border-box;
     padding-left: 40px;
     width: 570px;
 }
@@ -313,15 +314,17 @@ body {
 
 .features {
     background-color: #efe3cb;
-    background-image: url("../img/features/wafer.jpg");
+    background-image: url("../img/features/wafer.png");
     background-repeat: no-repeat;
-    object-fit: contain;
+    object-fit: cover;
     padding: 24px;
+    border-radius: 16px;
+    box-sizing: border-box;
     border-radius: 16px;
 }
 
 .features-content {
-        padding: 0 40px 0 40px;
+    padding: 0 40px 0 40px;
     background-color: #fcfcfc;
     border-radius: 16px;
 }
