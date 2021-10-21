@@ -120,7 +120,7 @@
                             в ваш заказ упаковку нежных <br>
                             зефирок совершенно бесплатно.</p>
                         <a href="#" class="button button-main button-presents">Хочу подарок</a>
-                        <img src="img/presents/marshmallows.png" width="232" height="249" alt="Маршмеллоу в вафельном рожке">
+                        <img src="img/presents/marshmallows.png" width="232" height="240" alt="Маршмеллоу в вафельном рожке">
                     </li>
                 </ul>
             </article>
@@ -132,7 +132,7 @@
                 <ul class="catalog-list">
                     <li class="catalog-item">
                         <article class="catalog-article">
-                            <img class="catalog-item-img" src="img/catalog/raspberries.png" width="192" height="184" alt="">
+                            <img class="catalog-img" src="img/catalog/raspberries.png" width="192" height="184" alt="">
                             <div class="catalog-content"> <!-- div поставил для работы с гридами -->
                                 <h3 class="catalog-item-caption">Малинка</h3>
                                 <p class="catalog-item-description">
@@ -149,7 +149,7 @@
                     </li>
                     <li class="catalog-item">
                         <article class="catalog-article">
-                            <img class="catalog-item-img" src="img/catalog/pistachio.png" width="192" height="184" alt="">
+                            <img class="catalog-img" src="img/catalog/pistachio.png" width="192" height="184" alt="">
                             <div class="catalog-content">
                                 <h3 class="catalog-item-caption">Фисташка</h3>
                                 <p class="catalog-item-description">
@@ -166,7 +166,7 @@
                     </li>
                     <li class="catalog-item">
                         <article class="catalog-article">
-                            <img class="catalog-item-img" src="img/catalog/blueberry.png" width="192" height="184" alt="">
+                            <img class="catalog-img" src="img/catalog/blueberry.png" width="192" height="184" alt="">
                             <div class="catalog-content">
                                 <h3 class="catalog-item-caption">Черника</h3>
                                 <p class="catalog-item-description">
@@ -183,7 +183,7 @@
                     </li>
                     <li class="catalog-item">
                         <article class="catalog-article">
-                            <img class="catalog-item-img" src="img/catalog/bubble.png" width="192" height="184" alt="">
+                            <img class="catalog-img" src="img/catalog/bubble.png" width="192" height="184" alt="">
                             <div class="catalog-content">
                                 <h3 class="catalog-item-caption">Бабл-гам</h3>
                                 <p class="catalog-item-description">
@@ -234,12 +234,12 @@
             </section>
             <div class="index-columns">
                 <article class="news">
-                    <p>Новое в нашем блоге</p>
                     <h2>
                         10 способов сервировки <br>
                         фруктовых щербетов <br>
                         к столу
                     </h2>
+                    <p>Новое в нашем блоге</p>
                 </article>
                 <section class="mailing">
                     <h2 class="visually-hidden">Адрес электронной почты</h2>
@@ -275,20 +275,21 @@
                             Укажите адрес и дату доставки, и мы свяжемся <br>
                             с вами, чтобы подтвердить заказ.
                         </p>
-                        <label class="feedback-form-label" for="feedback-form-date">Дата</label>
-                        <br>
-                        <input class="feedback-form-date" type="text" name="feedback-form-date" id="feedback-form-date" placeholder="01.04.2020" pattern="[0-9]{2}.[0-9]{2}.[0-9]{4}" required>
+                        <p class="field-group feedback-form-date">
+                            <label class="feedback-label" for="feedback-form-date">Дата</label>
+                            <input type="text" name="feedback-form-date" id="feedback-form-date" placeholder="01.04.2020" pattern="[0-9]{2}.[0-9]{2}.[0-9]{4}" required>
+                        </p>
+                        <p class="field-group feedback-form-phone">
+                            <label class="feedback-label" for="feedback-form-phone">Телефон</label>
+                            <input type="tel" name="feedback-form-phone" id="feedback-form-phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 800 999-00-00" required>
+                        </p>
 
-                        <label class="feedback-form-label" for="feedback-form-phone">Телефон</label>
-                        <br>
-                        <input class="feedback-form-phone" type="tel" name="feedback-form-phone" id="feedback-form-phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 800 999-00-00" required>
+                        <p class="field-group feedback-form-address">
+                            <label class="feedback-label" for="feedback-form-address">Адрес</label>
+                            <input type="text" name="feedback-form-address" id="feedback-form-address" placeholder="ул. Большая Конюшенная, 19/8">
+                        </p>
 
-                        <label class="feedback-form-label" for="feedback-form-address">Адрес</label>
-                        <br>
-                        <input class="feedback-form-address" type="text" name="feedback-form-address" id="feedback-form-address" placeholder="ул. Большая Конюшенная, 19/8">
-
-                        <button class="button button-second button-submit" type="submit">Отправить</button>
-
+                        <button class="button button-second button-submit button-feedback" type="submit">Отправить</button>
                     </form>
                 </div>
             </section>
