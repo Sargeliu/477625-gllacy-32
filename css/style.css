@@ -120,6 +120,12 @@ body {
     height: 46px;
 }
 
+.button-cart {
+    width: 32px;
+    height: 32px;
+    justify-self: end;
+}
+
 
 .main-container {
     flex-grow: 1;
@@ -188,6 +194,7 @@ body {
 .site-navigation-user {
     display: grid;
     grid-template-columns: repeat(4, max-content);
+    column-gap: 16px;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -206,6 +213,7 @@ body {
 
 .site-navigation-phone {
     font-weight: 700;
+    margin-right: 2px;
 }
 
 .site-navigation-enter,
@@ -374,7 +382,9 @@ body {
 }
 
 .catalog-item {
+    position: relative;
     width: 270px;
+    margin-top: 51px;
 }
 
 
@@ -387,10 +397,18 @@ body {
     text-align: center;
 }
 
+.catalog-img {
+    position: absolute;
+    top: -51px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
 .catalog-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 40px 0 40px;
+    padding: 133px 40px 24px 40px;
     background-color: #fcfcfc;
     border-radius: 8px;
 }
@@ -858,28 +876,38 @@ body {
 .pagination-list {
     width: 202px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     margin: 0;
-    margin-left: 303px;
+    margin-left: 300px;
     padding: 0;
     list-style-type: none;
 }
 
+.pagination-prev {
+    margin-right: 16px;
+}
+
+.pagination-next{
+    margin-left: 16px;
+}
+
+.pagination-item {
+    min-width: 24px;
+    min-height: 24px;
+    text-align: center;
+}
+
 .pagination-link {
-    margin: auto;
     display: block;
     color: inherit;
     font-size: inherit;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 24px;
     text-decoration: none;
 }
 
-.pagination-current {
-    display: flex;
-    width: 24px;
-    height: 24px;
+.pagination-active {
     background-color: #fcfcfc;
     border-radius: 50%;
 }
