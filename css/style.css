@@ -136,6 +136,7 @@ body {
     margin: 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 104px;
     list-style-type: none;
 
@@ -192,33 +193,37 @@ body {
 }
 
 .site-navigation-user {
-    display: grid;
-    grid-template-columns: repeat(4, max-content);
-    column-gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: 0;
     padding: 0;
-    max-width: 450px;
+    max-width: 470px;
     margin-left: auto;
     list-style-type: none;
 }
 
+.site-navigation-user li:not(:last-child) {
+    margin-right: 16px;
+}
+
+.site-navigation-phone {
+    display: inline-block;
+    font-weight: 700;
+    margin-right: 2px;
+}
 
 .site-navigation-search {
+    display: inline-block;
     width: 32px;
     height: 32px;
     background-color: rgba(252, 252, 252, 0.3);
     border-radius: 50%;
 }
 
-.site-navigation-phone {
-    font-weight: 700;
-    margin-right: 2px;
-}
-
 .site-navigation-enter,
-.site-navigation-cart,
-.site-navigation-full-cart {
+.site-navigation-cart {
+    display: inline-block;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
@@ -226,24 +231,18 @@ body {
     text-decoration: none;
     background-color: rgba(252, 252, 252, 0.3);
     border-radius: 26px;
-    padding: 6px 18px 6px 18px;
     color: #2D3440;
 }
 
 .site-navigation-enter {
-    min-width: 92px;
-    min-height: 32px;
+    padding: 6px 16px 6px 40px;
 }
 
 .site-navigation-cart {
-    min-width: 97px;
-    min-height: 32px;
+    padding: 6px 16px 6px 40px;
 }
 
-.site-navigation-full-cart {
-    min-width: 117px;
-    min-height: 32px;
-}
+
 
 /* * main */
 
@@ -265,6 +264,24 @@ body {
 
 .promo {
     margin-bottom: 106px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1f auto;
+    grid-column: 30px;
+}
+
+.promo-descr {
+    grid-column: 1 / span 6;
+    z-index: 1;
+    padding-left: 70px;
+    padding-top: 136px;
+}
+
+.slider-contents {
+    grid-column: 7 / -1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .promo-title {
@@ -284,14 +301,37 @@ body {
 }
 
 .slider-controls {
+    grid-column: 1 / span 6;
+    display: flex;
+    justify-content: flex-start;
     min-width: 52px;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
+.slider-controls li:not(:last-child){
+    margin-right: 8px;
+}
 
-/* .presents {} */
+.slider-controls-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border-style: none;
+    background-color: rgba(252, 252, 252, 0.3);
+}
+
+.slider-controls-button:focus,
+.slider-controls-button:active,
+.slider-controls-button:hover {
+    background-color: #fcfcfc;
+}
+
+.promo .social-links {
+    grid-column: 7 / -1;
+    justify-self: end;
+}
 
 .presents {
     margin-bottom: 80px;
@@ -307,13 +347,23 @@ body {
 }
 
 .presents-item {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    column-gap: 30px;
-    grid-template-rows: 40px auto auto auto 40px;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
-    padding: 0 0 0 40px;
+    padding: 40px 0 40px 40px;
     width: 570px;
+}
+
+.presents-item:first-of-type {
+    background-image: url('../img/presents/raspberries.png');
+    background-repeat: no-repeat;
+    background-position: bottom right 15px;
+}
+
+.presents-item:last-of-type {
+    background-image: url('../img/presents/marshmallows.png');
+    background-repeat: no-repeat;
+    background-position: bottom right 7px;
 }
 
 .presents-title {
@@ -331,9 +381,7 @@ body {
 }
 
 .presents-item-caption {
-    grid-column: 1 / span 4;
-    grid-row: 2;
-    z-index: 1;
+
     margin: 0;
     margin-bottom: 16px;
     font-size: 24px;
@@ -342,9 +390,6 @@ body {
 }
 
 .presents-item-description {
-    grid-column: 1 / span 4;
-    grid-row: 3;
-    z-index: 1;
     margin: 0;
     margin-bottom: 32px;
     font-weight: 400;
@@ -353,16 +398,10 @@ body {
 .presents-item a {
     grid-column: 1 / span 4;
     grid-row: 4;
-    z-index: 1;
 }
 
 .presents-item img {
-    grid-column: 4 / -1;
-    grid-row: 1 / -1;
-    justify-self: end;
-    align-self: end;
-    z-index: 0;
-    margin-right: 15px;
+
 }
 
 
@@ -503,7 +542,6 @@ body {
     width: 570px;
     background-color: #ffffff;
     background-image: url("../img/article.jpg");
-    /* background-size: cover; */
     background-repeat: no-repeat;
     background-size: 100% auto;
     object-fit: cover;
@@ -879,7 +917,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     margin: 0;
-    margin-left: 300px;
+    margin-left: 290px;
     padding: 0;
     list-style-type: none;
 }
