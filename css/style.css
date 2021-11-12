@@ -107,6 +107,7 @@ body {
 }
 
 .button-filters {
+    align-self: end;
     padding: 8px 53px 8px 53px;
     border: 2px solid #fcfcfc;
     box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
@@ -117,12 +118,18 @@ body {
 
 .button-filters:hover {
     background-color: #fcfcfc;
-    border: 2px solid #f7cad6;
+    box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
+    outline: none;
 }
 
 .button-filters:focus {
-    border: 2px solid #2d3440;
-    background-color: rgba(252, 252, 252, 0.3);
+    outline: 2px solid #2d3440;
+}
+
+.button-filters:disabled {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
+    color: #565c66;
 }
 
 .button-order {
@@ -1420,7 +1427,6 @@ body {
 .filters {
     margin: 0;
     margin-bottom: 48px;
-    width: 807px;
 }
 
 .main-conteiner {
@@ -1664,35 +1670,7 @@ body {
     border: 1px solid #565c66;
 }
 
-.button-sorting {
-    width: 187px;
-    margin-top: 27px;
-    margin-left: 5px;
-    background: rgba(252, 252, 252, 0.3);
-    outline: 2px solid #fcfcfc;
-    border-radius: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 20px;
-    border: none;
-    cursor: pointer;
-}
 
-.button-sorting:hover {
-    background-color: #fcfcfc;
-    box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
-    outline: none;
-}
-
-.button-sorting:focus {
-    outline: 2px solid #2d3440;
-}
-
-.button-sorting:disabled {
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(252, 252, 252, 0.3);
-    color: #565c66;
-}
 
 .main-filter {
     margin: 0;
