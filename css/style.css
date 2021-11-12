@@ -462,7 +462,7 @@ body {
     padding-bottom: 40px;
 }
 
-/* .promo {} */
+/* * .promo */
 
 .promo {
     margin-bottom: 106px;
@@ -656,12 +656,6 @@ body {
     border: 1px solid #fcfcfc;
 }
 
-/* .slider-controls-button:focus,
-.slider-controls-button:active,
-.slider-controls-button:hover {
-    background-color: #fcfcfc;
-} */
-
 .promo .social-links {
     grid-column: 7 / -1;
     justify-self: end;
@@ -734,7 +728,7 @@ body {
     grid-row: 4;
 }
 
-/* .catalog {} */
+/* * .catalog */
 
 .catalog {
     margin-bottom: 80px;
@@ -903,7 +897,7 @@ body {
     color: #565C66;
 }
 
-/* index-columns */
+/* * index-columns */
 
 .index-columns {
     display: grid;
@@ -972,8 +966,6 @@ body {
     grid-template-columns: 332px auto;
     column-gap: 24px;
 }
-
-
 
 .mailing-form button {
     justify-self: end;
@@ -1182,7 +1174,7 @@ body {
 }
 
 
-/* .page-footer {} */
+/* * .page-footer */
 
 .footer-container {
     padding: 48px 0;
@@ -1237,7 +1229,6 @@ body {
 
 .creator {
     margin-left: auto;
-    /* width: 193px; */
     display: grid;
     grid-template-rows: repeat(2, min-content);
     row-gap: 14px;
@@ -1422,7 +1413,7 @@ body {
 }
 
 
-/* filters */
+/* * filters */
 
 .filters {
     margin: 0;
@@ -1759,9 +1750,6 @@ body {
 .prev {
     margin-right: 11px;
 }
-
-
-
 
 .catalog-card {
     margin-bottom: 16px;
