@@ -108,6 +108,7 @@ body {
 
 .button-filters {
     align-self: end;
+    margin-bottom: 16px;
     padding: 8px 53px 8px 53px;
     border: 2px solid #fcfcfc;
     box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
@@ -173,8 +174,6 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     width: 104px;
     list-style-type: none;
 }
@@ -185,6 +184,10 @@ body {
     height: 24px;
     border-radius: 50%;
     border-color: transparent;
+}
+
+.social-links-item:not(:last-child) {
+    margin-right: 16px;
 }
 
 .social-icon {
@@ -718,6 +721,7 @@ body {
 }
 
 .presents-item-description {
+    max-width: 322px;
     margin: 0;
     margin-bottom: 32px;
     font-weight: 400;
@@ -1417,7 +1421,7 @@ body {
 
 .filters {
     margin: 0;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
 }
 
 .main-conteiner {
@@ -1661,18 +1665,12 @@ body {
     border: 1px solid #565c66;
 }
 
-
-
 .main-filter {
     margin: 0;
     padding: 0;
     margin-right: 20px;
     margin-bottom: 16px;
     border: none;
-}
-
-.main-filter:nth-child(4) {
-    margin-bottom: 0;
 }
 
 .main-filter:nth-child(3) {
