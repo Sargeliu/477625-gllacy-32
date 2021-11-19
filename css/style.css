@@ -84,6 +84,12 @@ body {
     border: 2px solid #2d3440;
 }
 
+.button-main:disabled {
+    background-color: #e7e7e7;
+    color: #e7e7e7;
+    border: 4px solid #f7cad6;
+}
+
 .button-second {
     position: relative;
     border: 4px solid #f7cad6;
@@ -104,6 +110,12 @@ body {
     background-color: #ff2f64;
     border: 2px solid #2d3440;
     color: #fcfcfc;
+}
+
+.button-second:disabled {
+    background-color: #b9b9b9;
+    color: #565c66;
+    border: 4px solid rgba(185, 185, 185, 0.3);
 }
 
 .button-filters {
@@ -165,6 +177,15 @@ body {
 .button-cart:focus {
     background-color: #ff2f64;
     border: 2px solid #2d3440;
+}
+
+.button-cart:disabled {
+    background-color: #b9b9b9;
+    border: none;
+    background-image: url("../img/catalog/cart-disabled.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
 }
 
 .main-container {
@@ -1012,6 +1033,12 @@ body {
 .fields:focus {
     border: 2px solid #2d3440;
     color: #2d3440;
+}
+
+.fields:disabled {
+    background-color: #e7e7e7;
+    color: #2d3440;
+    cursor: default;
 }
 
 .feedback {
