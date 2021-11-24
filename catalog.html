@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Каталог - GllacyShop</title>
-    <link rel="icon" href="img/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -134,37 +134,26 @@
                         </div>
                         </fieldset>
                         <fieldset class="main-filter fatness">
-                        <legend class="catalog-filter-title">Жирность</legend>
-                        <ul class="catalog-filter-main catalog-filter-list">
-                            <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="visually-hidden control-input" type="radio" name="product-group" value="0">
-                                <span class="control-mark"></span>
-                                <span>0%</span>
-                            </label>
-                            </li>
-                            <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="visually-hidden control-input" type="radio" name="product-group" value="0-10" checked>
-                                <span class="control-mark"></span>
-                                <span>до 10%</span>
-                            </label>
-                            </li>
-                            <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="visually-hidden control-input" type="radio" name="product-group" value="0-30">
-                                <span class="control-mark"></span>
-                                <span>до 30%</span>
-                            </label>
-                            </li>
-                            <li class="catalog-filter-item">
-                            <label class="control">
-                                <input class="visually-hidden control-input" type="radio" name="product-group" value="30+">
-                                <span class="control-mark"></span>
-                                <span>выше 30%</span>
-                            </label>
-                            </li>
-                        </ul>
+                            <legend class="catalog-filter-title">Жирность</legend>
+                                <ul class="catalog-filter-main catalog-filter-list">
+                                    <li class="catalog-filter-item">
+                                        <input class="control-input" id="zero" type="radio" name="product-group" value="0">
+                                        <label class="zero" for="zero">0%</label>
+                                    </li>
+                                    <li class="catalog-filter-item">
+                                        <input class="control-input" id="ten" type="radio" name="product-group" value="0-10" checked>
+                                        <label for="ten">до 10%</label>
+                                    </li>
+                                    <li class="catalog-filter-item">
+                                        <input class="control-input"
+                                        id="thirty" type="radio" name="product-group" value="0-30">
+                                        <label for="thirty">до 30%</label>
+                                    </li>
+                                    <li class="catalog-filter-item">
+                                        <input class="control-input" id="fatty" type="radio" name="product-group" value="30+">
+                                        <label for="fatty">выше 30%</label>
+                                    </li>
+                                </ul>
                         </fieldset>
                         <fieldset class="main-filter catalog-filter-group">
                         <legend class="catalog-filter-title">Наполнители</legend>

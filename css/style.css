@@ -1596,14 +1596,6 @@ body {
     background-color: #fcfcfc;
 }
 
-.range-toggle:hover .range-bar-mini {
-    background-color: #2d3440;
-}
-
-.range-toggle:focus .range-bar-mini {
-    background-color: #2d3440;
-}
-
 .range-toggle {
     position: absolute;
     width: 16px;
@@ -1618,15 +1610,30 @@ body {
     background-color: #fcfcfc;
 }
 
-.range-toggle:active {
-    background-color: #2d3440;
-}
-
 .range-toggle:focus {
     background-color: #fcfcfc;
     border: none;
     outline: 2px solid #2d3440;
 }
+
+.range-toggle:active {
+    background-color: #2d3440;
+    border: none;
+    outline: none;
+}
+
+.range-toggle:hover .range-bar-mini {
+    background-color: #2d3440;
+}
+
+.range-toggle:active .range-bar-mini {
+    background-color: #2d3440;
+}
+
+.range-toggle:focus .range-bar-mini {
+    background-color: #2d3440;
+}
+
 
 .toggle-min {
     top: -7px;
@@ -1684,57 +1691,90 @@ body {
     position: relative;
     display: block;
     padding-left: 40px;
+    cursor: pointer;
 }
 
 .catalog-filter-item:first-child .control {
     padding-left: 24px;
 }
 
-.control-mark {
-    position: absolute;
-    top: 2px;
-    left: 16px;
-    width: 14px;
-    height: 14px;
-    border: 1px solid #2d3440;
-    cursor: pointer;
-}
-
-
 .catalog-filter-item:first-child .control-mark {
     left: 0;
 }
 
-.control-input[type="radio"]+.control-mark {
-    border-radius: 50%;
+input[type=radio] {
+    visibility: hidden;
+    position: absolute;
 }
 
-.control-input[type="radio"]:checked+.control-mark::before {
+input[type=radio]+label {
+    position: relative;
+    cursor: pointer;
+    margin-left: 16px;
+}
+
+input[type=radio]+label.zero {
+    margin-left: 0;
+}
+
+input[type=radio]:disabled+label {
+    cursor: default;
+}
+
+input[type=radio]+label::before {
+    content: '';
+    position: relative;
+    top: 2px;
+    height: 14px;
+    width: 14px;
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: baseline;
+    outline: 1px solid #2d3440;
+}
+
+input[type=radio]+label:hover:before {
+    outline: 1px solid #fcfcfc;
+}
+
+input[type=radio]:checked+label::after {
+    content: '';
+    display: block;
     position: absolute;
-    top: 4px;
+    top: 5px;
     left: 4px;
     width: 6px;
     height: 6px;
-    background-color: #2d3440;
     border-radius: 50%;
-    content: "";
+    background-color: #2d3440;
 }
 
-.control-input[type="radio"]:checked+.control-mark:hover::before {
+input[type=radio]:checked+label:hover::after {
     background-color: #fcfcfc;
 }
 
-.control-input[type="radio"]:checked+.control-mark:disabled::before {
+input[type=radio]:disabled+label:hover::after {
     background-color: #565c66;
 }
 
-.control-mark:hover {
-    border: 1px solid #fcfcfc;
+input[checked]:disabled+label:hover::after {
+    background-color: #565c66;
 }
 
-.control-mark:disabled {
-    border: 1px solid #565c66;
+input[type=radio]:disabled+label::before {
+    outline: 1px solid #565c66;
+    cursor: default;
 }
+
+input[type=radio]:disabled+label::after {
+    background-color: #565c66;
+    cursor: default;
+}
+
+input[type=radio]+label::before {
+    border-radius: 50%;
+}
+
 
 .main-filter {
     margin: 0;
@@ -1795,9 +1835,10 @@ body {
 
 .control-input[type="checkbox"]:disabled+.control-mark-checkbox {
     background-image: url("../img/filters/icon-check-off-disabled.svg");
+    cursor: default;
 }
 
-.control-input[type="checkbox"]:checked:disabled+.control-mark-checkbox:hover {
+.control-input[type="checkbox"]:checked:disabled+.control-mark-checkbox {
     background-image: url("../img/filters/icon-check-on-disabled.svg");
 }
 
