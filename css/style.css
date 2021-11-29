@@ -1244,9 +1244,6 @@ body {
     position: relative;
     margin: 0;
     padding-left: 24px;
-}
-
-.certificates-title a {
     font-family: Inter, sans-serif;
     color: inherit;
     font-size: 14px;
@@ -1260,7 +1257,7 @@ body {
     position: absolute;
     width: 14px;
     height: 14px;
-    top: 6px;
+    top: 3px;
     left: 1px;
     background-image: url("../img/heart.svg");
     background-repeat: no-repeat;
@@ -1269,10 +1266,6 @@ body {
 
 .certificates-text {
     margin: 0;
-    font-size: 14px;
-}
-
-.certificates-text {
     font-family: inherit;
     font-weight: 400;
     font-size: 14px;
